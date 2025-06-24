@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background-color: #fcefe9;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+img {
+  width: 150px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+h2 {
+  margin: 20px;
+  font-weight: bold;
+}
+
+/* Nút chung */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Vùng chứa 2 nút */
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Nút "Có" (đỏ) */
+#yesBtn {
+  background-color: #f87171;
+  color: white;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/* Nút "Không" (xanh) */
+#noBtn {
+  background-color: #60a5fa;
+  color: white;
+  z-index: 2;
+}
+
+/* Ô nhập khi chọn "Có" */
+#textInput {
+  margin-top: 20px;
+  display: none;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
